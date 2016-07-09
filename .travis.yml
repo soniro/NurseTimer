@@ -12,3 +12,7 @@ android:
     - extra-google-m2repository
 
     - sys-img-x86-android-24
+
+
+script:
+  - ./gradlew build connectedCheck --info
