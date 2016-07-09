@@ -3,4 +3,8 @@ android:
   components:
     - build-tools-24.0.0
     - android-24
+
+    -extra-android-m2repository
+    -extra-google-m2repository
+
     - sys-img-x86-android-24
