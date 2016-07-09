@@ -12,6 +12,10 @@ public class DateTime {
         this.date = date;
     }
 
+    public static DateTime now() {
+        return DateTime.ofMillis(System.currentTimeMillis());
+    }
+
     public static DateTime ofMillis(long millis) {
         return new DateTime(new Date(millis));
     }
@@ -26,6 +30,10 @@ public class DateTime {
 
     public DateTime minus(DateTime dateTime) {
         return DateTime.ofMillis(getMillis() - dateTime.getMillis());
+    }
+
+    public DateTime minus(long value, TimeUnit unit) {
+        return DateTime.ofMillis(getMillis() - value * unit.getFactor());
     }
 
     public DateTime plus(long value, TimeUnit unit) {

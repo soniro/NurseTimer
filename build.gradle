@@ -2,6 +2,7 @@ apply plugin: 'idea'
 
 buildscript {
     repositories {
+        mavenLocal()
         jcenter()
     }
     dependencies {
@@ -14,6 +15,7 @@ buildscript {
 
 allprojects {
     repositories {
+        mavenLocal()
         jcenter()
     }
 }
