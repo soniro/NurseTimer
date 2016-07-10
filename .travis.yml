@@ -5,8 +5,8 @@ android:
     - tools
 
     - build-tools-24.0.0
-    - android-23
     - android-24
+    - android-23
 
     - extra-android-m2repository
     - extra-google-m2repository
@@ -14,7 +14,6 @@ android:
     - sys-img-armeabi-v7a-android-23
 
 before_script:
-  - android list targets
   - echo no | android create avd --force -n test -t android-23 --abi armeabi-v7a
   - emulator -avd test -no-skin -no-audio -no-window &
   - android-wait-for-emulator
