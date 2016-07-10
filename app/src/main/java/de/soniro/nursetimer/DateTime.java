@@ -1,10 +1,7 @@
 package de.soniro.nursetimer;
 
-import org.joda.time.format.DateTimeFormat;
-
+import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import static de.soniro.nursetimer.TimeUnit.SECONDS;
 
 public class DateTime {
 
@@ -40,7 +37,7 @@ public class DateTime {
 
     @Override
     public String toString() {
-        return DateTimeFormat.forPattern("dd.MM.yyyy hh:mm").print(getMillis());
+        return new SimpleDateFormat("dd.MM.yyyy hh:mm").format(date);
     }
 
     public Long as(TimeUnit timeUnit) {
