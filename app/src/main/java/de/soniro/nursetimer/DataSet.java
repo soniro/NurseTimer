@@ -15,8 +15,8 @@ public class DataSet {
     private DateTime startTime;
     private DateTime endTime;
 
-    public Long getDuration() {
-        return endTime.minus(startTime).getSeconds();
+    public Long getDuration(TimeUnit timeUnit) {
+        return endTime.minus(startTime).as(timeUnit);
     }
 
 }

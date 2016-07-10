@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static de.soniro.nursetimer.DataSetStore.DataSetStoreResult.*;
-import static de.soniro.nursetimer.DateTime.TimeUnit.MINUTES;
+import static de.soniro.nursetimer.TimeUnit.MINUTES;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;

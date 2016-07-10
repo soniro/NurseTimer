@@ -13,8 +13,11 @@
         tools:showIn="@layout/activity_main"
         tools:context="de.soniro.nursetimer.MainActivity">
 
-    <TextView
-            android:text="Hello World!"
+
+    <ListView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/listView" android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" android:layout_alignParentEnd="true"/>
+
 </RelativeLayout>

@@ -2,7 +2,8 @@ package de.soniro.nursetimer;
 
 import org.junit.Test;
 
-import static de.soniro.nursetimer.DateTime.TimeUnit.MINUTES;
+import static de.soniro.nursetimer.TimeUnit.MINUTES;
+import static de.soniro.nursetimer.TimeUnit.SECONDS;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
@@ -17,7 +18,7 @@ public class DataSetTest {
                 .endTime(startTime.plus(43, MINUTES))
                 .build();
 
-        assertThat(dataset.getDuration(), is(Long.valueOf(43 * 60)));
+        assertThat(dataset.getDuration(SECONDS), is(Long.valueOf(43 * 60)));
     }
 
 

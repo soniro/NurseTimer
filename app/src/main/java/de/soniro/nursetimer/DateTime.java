@@ -1,8 +1,10 @@
 package de.soniro.nursetimer;
 
+import org.joda.time.format.DateTimeFormat;
+
 import java.util.Date;
 
-import static de.soniro.nursetimer.DateTime.TimeUnit.SECONDS;
+import static de.soniro.nursetimer.TimeUnit.SECONDS;
 
 public class DateTime {
 
@@ -24,10 +26,6 @@ public class DateTime {
         return date.getTime();
     }
 
-    public Long getSeconds() {
-        return getMillis() / SECONDS.getFactor();
-    }
-
     public DateTime minus(DateTime dateTime) {
         return DateTime.ofMillis(getMillis() - dateTime.getMillis());
     }
@@ -40,18 +38,12 @@ public class DateTime {
         return DateTime.ofMillis(getMillis() + value * unit.getFactor());
     }
 
-    public enum TimeUnit {
-        SECONDS(1000),
-        MINUTES(60 * 1000);
+    @Override
+    public String toString() {
+        return DateTimeFormat.forPattern("dd.MM.yyyy hh:mm").print(getMillis());
+    }
 
-        private long factor;
-
-        TimeUnit(long factor) {
-            this.factor = factor;
-        }
-
-        public long getFactor() {
-            return factor;
-        }
+    public Long as(TimeUnit timeUnit) {
+        return Math.round(Double.valueOf(getMillis()) / timeUnit.getFactor());
     }
 }
