@@ -1,4 +1,4 @@
-package de.soniro.nursetimer;
+package de.soniro.nursetimer.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,6 +12,7 @@ import static lombok.AccessLevel.PRIVATE;
 public class DataSet {
 
     private String id;
+    private Position position;
     private DateTime startTime;
     private DateTime endTime;
 

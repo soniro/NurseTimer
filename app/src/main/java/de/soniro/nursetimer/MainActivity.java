@@ -4,9 +4,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.ListView;
+import de.soniro.nursetimer.model.DataSet;
+import de.soniro.nursetimer.model.DateTime;
 import de.soniro.nursetimer.ui.DataSetAdapter;
 
-import static de.soniro.nursetimer.TimeUnit.*;
+import static de.soniro.nursetimer.model.TimeUnit.*;
 
 public class MainActivity extends AppCompatActivity {
 

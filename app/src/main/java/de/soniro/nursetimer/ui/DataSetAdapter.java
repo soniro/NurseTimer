@@ -6,12 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-import de.soniro.nursetimer.DataSet;
 import de.soniro.nursetimer.R;
+import de.soniro.nursetimer.model.DataSet;
 
 import java.util.List;
 
-import static de.soniro.nursetimer.TimeUnit.MINUTES;
+import static de.soniro.nursetimer.model.TimeUnit.MINUTES;
 
 public class DataSetAdapter extends ArrayAdapter<DataSet> {
 

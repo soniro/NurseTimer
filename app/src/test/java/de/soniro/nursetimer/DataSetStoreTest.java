@@ -1,11 +1,13 @@
 package de.soniro.nursetimer;
 
 import de.soniro.nursetimer.DataSetStore.DataSetStoreResult;
+import de.soniro.nursetimer.model.DataSet;
+import de.soniro.nursetimer.model.DateTime;
 import org.junit.Before;
 import org.junit.Test;
 
 import static de.soniro.nursetimer.DataSetStore.DataSetStoreResult.*;
-import static de.soniro.nursetimer.TimeUnit.MINUTES;
+import static de.soniro.nursetimer.model.TimeUnit.MINUTES;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;

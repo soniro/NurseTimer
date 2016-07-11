@@ -1,4 +1,4 @@
-package de.soniro.nursetimer;
+package de.soniro.nursetimer.model;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

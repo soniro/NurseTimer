@@ -1,4 +1,4 @@
-package de.soniro.nursetimer;
+package de.soniro.nursetimer.model;
 
 public enum TimeUnit {
     SECONDS(1000),

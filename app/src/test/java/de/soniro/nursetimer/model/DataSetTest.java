@@ -1,9 +1,9 @@
-package de.soniro.nursetimer;
+package de.soniro.nursetimer.model;
 
 import org.junit.Test;
 
-import static de.soniro.nursetimer.TimeUnit.MINUTES;
-import static de.soniro.nursetimer.TimeUnit.SECONDS;
+import static de.soniro.nursetimer.model.TimeUnit.MINUTES;
+import static de.soniro.nursetimer.model.TimeUnit.SECONDS;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
